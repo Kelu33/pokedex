@@ -7,6 +7,10 @@ import { CreatePokemonPageComponent } from './pages/create-pokemon-page/create-p
 import { PokemonDetailComponent } from './components/pokemon-detail/pokemon-detail.component';
 import { PokemonListComponent } from './components/pokemon-list/pokemon-list.component';
 
+import { RouterModule } from '@angular/router';
+import { ROUTES } from './app.routes';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +20,9 @@ import { PokemonListComponent } from './components/pokemon-list/pokemon-list.com
     PokemonListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(ROUTES),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

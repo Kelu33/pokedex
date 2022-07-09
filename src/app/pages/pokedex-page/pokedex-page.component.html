@@ -1,1 +1,18 @@
-<p>pokedex-page works!</p>
+
+<div class="pokedex">    
+    
+    <div class="poke-detail-wrap">
+        <app-pokemon-detail
+        [pokemon]="pokemonDetail"
+        ></app-pokemon-detail>
+    </div>
+
+    <div class="poke-list-wrap">
+        <app-pokemon-list
+        (pokemonClick)="onReceivePokemon($event)"
+        [ngStyle]="{'width':'50vw'}"
+        [pokemons]="pokemons"
+        ></app-pokemon-list>
+    </div>
+
+</div>

@@ -1,0 +1,27 @@
+.pokedex {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 16px;
+    border: none;
+    width: 80vw;
+    aspect-ratio: 1.618;
+    background: center / cover no-repeat url("src/assets/poke-background.png");
+}
+
+.poke-list-wrap {
+    width: 50%;
+
+    margin: 16px;
+
+    border: 3px solid grey;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.poke-detail-wrap {
+    width: 50%;
+    align-self: flex-end;
+}

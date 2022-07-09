@@ -1,1 +1,7 @@
-<p>pokemon-list works!</p>
+<div class="content">    
+    <div class="poke-wrap"
+     *ngFor="let pokemon of pokemons">
+        <img [src]="pokemon.imageUrl" alt="">
+        <a (click)="sendPokemon(pokemon)"></a>
+    </div>
+</div>

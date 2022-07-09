@@ -1,0 +1,68 @@
+.content {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    border-radius: 16px;
+    border: none;
+    width: 80vw;
+    aspect-ratio: 1.618;
+    background: center / cover no-repeat url("src/assets/poke-background.png");
+}
+
+a {
+    padding: 0.8rem 1.2rem;
+    background-color: #bada55;
+    border-radius: 200px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+}
+
+.poke-form-wrap, .poke-preview {
+    border: 3px solid grey;
+    border-radius: 16px;
+    background-color: #eaeedf;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin: 2.4rem;
+
+}
+
+.poke-form-wrap {
+    width: 50%;
+    aspect-ratio: 1;
+    padding: 1.2rem;
+}
+
+.poke-preview {
+    width: 30%;
+    min-height: 50%;
+    padding: 1.2rem 2.4rem;
+}
+
+label, button {
+    margin: 0.8rem 1.2rem;
+}
+
+label, input, textarea{
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 8px);
+
+}
+textarea { resize: vertical; }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
