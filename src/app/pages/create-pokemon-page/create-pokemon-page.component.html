@@ -1,5 +1,5 @@
-
 <div class="content">  
+    <a [routerLink]="['/']">Pokedex</a>
 
     <div class="poke-preview">
         <h2>Preview :</h2>
@@ -37,8 +37,6 @@
             </label>
 
             <button type="submit" [disabled]="!pokeForm.valid">Create</button>
-
-            <a [routerLink]="['/']">Pokedex</a>
         </form>
     </div>  
 
