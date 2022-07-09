@@ -16,20 +16,18 @@
         [formGroup]="pokeForm"
         >
             <label>
-                NAME :
-                <input type="text" formControlName="name">
-                <p
-                *ngIf="!pokeForm.valid && pokeForm.get('name')?.errors?.['required']"
+                <span
+                *ngIf="pokeForm.get('name')?.errors?.['required']"
                 [ngStyle]="{'color': 'brown'}"
-                >Required</p>
+                >*</span>NAME :
+                <input type="text" formControlName="name">
             </label>
             <label>
-                IMAGE URL :
-                <input type="text" formControlName="imageUrl">
-                <p
-                *ngIf="!pokeForm.valid && pokeForm.get('imageUrl')?.errors?.['required']"
+                <span
+                *ngIf="pokeForm.get('imageUrl')?.errors?.['required']"
                 [ngStyle]="{'color': 'brown'}"
-                >Required</p>
+                >*</span>IMAGE URL :
+                <input type="text" formControlName="imageUrl">
             </label>
             <label>
                 DESCRIPTION :
